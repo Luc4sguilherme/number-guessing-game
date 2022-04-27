@@ -2,9 +2,9 @@ defmodule Guess do
   use Application
 
   @scores %{
-    (1..1) => "You're a mind ride!",
-    (2..4) => "Most impresive",
-    (3..6) => "You can do better than that"
+    (1..1) => "You're a mind rider!",
+    (2..4) => "Most impresive!",
+    (3..6) => "You can do better than that!"
   }
 
   def start(_, _) do
