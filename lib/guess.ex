@@ -3,7 +3,7 @@ defmodule Guess do
 
   @scores %{
     (1..1) => "You're a mind rider!",
-    (2..4) => "Most impresive!",
+    (2..4) => "Most impressive!",
     (3..6) => "You can do better than that!"
   }
 
@@ -13,9 +13,9 @@ defmodule Guess do
   end
 
   def run() do
-    IO.puts("Let's play Guess the Number")
+    IO.puts("Let's play guess the number")
 
-    IO.gets("Pick a difficult level (1, 2 or 3): ")
+    IO.gets("Pick a difficulty level (1, 2 or 3): ")
     |> parse_input()
     |> pickup_number()
     |> play()
